@@ -64,7 +64,16 @@
 	r4 r16 <bes' bes'>16 <bes bes'>8 |
 	<bes bes'> <bes bes'> <bes bes'> <bes bes'>16 <bes bes'> |
 	r2
-	
+				% Strain 2
+	\repeat volta 2 {
+	  des,8\staccato\mp bes16( a bes8)\staccato r8 |
+	  ees\staccato bes16( a bes8)\staccato r8 |
+	  f'16( ges f ees d8)\staccato bes8( |
+	  a8. bes16 a16 bes a8 |
+	  ees'8\marcato) r16 c16 des c des8 |
+	  ees8\marcato r16 c16 des c des8 |
+	  }
+	 % end repeat / end Strain 2
       } % end treble clef
     >>
   } % end relative
