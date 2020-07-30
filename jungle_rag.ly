@@ -78,8 +78,11 @@
 	  r8 <des f bes>16 <des f bes> <des f bes>8 r8\f |
 	  r2\> |
 	  r8\mf <ees ges bes>16 <ees ges bes> <ees ges bes>8 r8 |
-	  }
-	 % end repeat / end Strain 2
+	  r8\mp <des f aes>\cresc r8 <des f aes> |
+	  r8 <aes' des f>16 <aes des f> <aes des f>8 r8|
+	  bes,16 c des ees f8 a |
+	  bes\f r8 <bes des f bes> r8^"D.S. al Coda" | % End cresc.
+	  } % end repeat / end Strain 2
       } % end treble clef
     >>
   } % end relative
