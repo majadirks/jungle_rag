@@ -10,7 +10,7 @@
   \relative c'' {
     \new PianoStaff
     <<
-      \new Staff = "up" {
+      \new Staff = "up" { % right hand staff
 	\clef treble
 	\key bes \minor
 	\time 2/4
@@ -97,11 +97,19 @@
 	ees8 ges16 f~ f d ees8 |
 	% voiceOne gets upstems, voiceTwo gets downstems
 	<<{\voiceOne r8 <aes f'>16\f <aes f'> r16 <aes f'> r8}
-	  \new Voice {\voiceTwo f2} >> |
+	  \new Voice {\voiceTwo f2} >> | %TODO: rests are placed too high after this!
 	bes8\mf aes16 ges~ ges8 bes |
-	aes ges16 f~ f8 r8
+	aes ges16 f~ f8 r8 |
+	\clef bass
+	ees,,16\mp\cresc ges a bes r4 \clef treble |
+	ees'16 ges a bes aes ges f bes |
+	aes8\mf ges f\cresc aes |
+	ges f16 ges ees8 r8 |
+	aes ges f16 ges r8 |
+	bes2
+	ces16\f bes aes ces
 	
-      } % end treble clef
+      } % end right hand staff
     >>
   } % end relative
 } % end score
