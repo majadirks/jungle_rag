@@ -72,6 +72,12 @@
 	  a8. bes16 a16 bes a8 |
 	  ees'8\marcato) r16 c16 des c des8 |
 	  ees8\marcato r16 c16 des c des8 |
+	  f8 r16 f16 ees8 a, |
+	  bes4 r4\< |
+	  r8\mf <ees ges bes>\< r8 <ees ges bes> |
+	  r8 <des f bes>16 <des f bes> <des f bes>8 r8\f |
+	  r2\> |
+	  r8\mf <ees ges bes>16 <ees ges bes> <ees ges bes>8 r8 |
 	  }
 	 % end repeat / end Strain 2
       } % end treble clef
