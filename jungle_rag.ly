@@ -82,7 +82,25 @@
 	  r8 <aes' des f>16 <aes des f> <aes des f>8 r8|
 	  bes,16 c des ees f8 a |
 	  bes\f r8 <bes des f bes> r8^"D.S. al Coda" | % End cresc.
-	  } % end repeat / end Strain 2
+	} % end repeat / end Strain 2
+	
+	% Coda / transition to trio
+	\break
+	s4 s8^"Coda" s8\coda | % Extra measure for spacing before coda
+	<bes bes'>4\staccato  <aes aes'>\staccato |
+	<ges ges'>\staccato <f f'>\staccato \bar "||"
+
+	% Trio
+	\key ees \minor
+	ees8\mf ges16 f~ f ees f8 |
+	bes8 ges16 f~ f4
+	ees8 ges16 f~ f d ees8 |
+	% voiceOne gets upstems, voiceTwo gets downstems
+	<<{\voiceOne r8 <aes f'>16\f <aes f'> r16 <aes f'> r8}
+	  \new Voice {\voiceTwo f2} >> |
+	bes8\mf aes16 ges~ ges8 bes |
+	aes ges16 f~ f8 r8
+	
       } % end treble clef
     >>
   } % end relative
