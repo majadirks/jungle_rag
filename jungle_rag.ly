@@ -28,7 +28,7 @@
 	<f, bes des f>2 |
 	<ges bes des>8 <ges bes des>16 <ges bes des>~
 	<ges bes des> <ges bes des> <ges bes des>8 |
-	<f aes c>4\> r4\! |
+	<f aes c>4 r4 | % Decrescendo supplied in LH part
 	\clef bass
 	<f, bes>8\mp <f bes>16 <f bes> r4 |
 	% The following line is tweaked
@@ -186,11 +186,36 @@
       \new Staff = "down" { % left hand staff
 	\clef bass
 	\key bes \minor
-	\partial 8 r8
+	%Four-plus-pickup bar intro
+	\partial 8 r8 % pickup measure
 	<ees,, ees'>\marcato <ees' ges bes> <ees ges bes> <des, des'>( |
 	<ees ees'>\marcato) <bes bes'> <bes' des f> <bes des f> |
 	<ees, ees'>16 r8. r4 |
 	r8 <bes' des f> <bes, bes'> r8 | % double bar supplied by RH staff above
+
+	% Strain 1, fist time
+	<bes bes'> <bes' des f> <bes des f> <bes, bes'>\marcato |
+	<aes aes'> <bes' des f> <bes des f> <aes, aes'>\marcato |
+	<ges ges'> <bes' des f> <bes des f> <ges, ges'>\marcato |
+	<f f'>\marcato r8 <f f'>4\tenuto |
+	<aes aes'>8 <ees'' aes c> <aes,, aes'> <ees'' aes c> |
+	<des, des'>8 <des' des'>16 <c c'> r16 <bes bes'> r16 <aes aes'> |
+	<ges ges'>8 <ges' bes des> <bes,, bes'> <ges'' bes des> |
+	<f, f'>8\tenuto\>( <ees ees'>) <des des'>\tenuto( <c c'>\!) |
+	<bes bes'>8\marcato r8 r8 <bes bes'>\marcato |
+	<aes aes'>8\marcato r8 r8 <aes aes'>\marcato |
+	<ges ges'>8\marcato r8 r8 <ges ges'>\marcato|
+				%Fun cross-hands bit
+				%TODO: two voices, one with spacer rests,
+	% so I can move the 8va slightly earlier
+	\autoBeamOff
+	<f f'>
+	\ottava #1 \clef treble
+	f'''''-"(Both treble clef notes 8va)" f'4 \ottava #0
+	\clef bass
+	\autoBeamOn
+	|  % end cross-hands bit
+	
 	} % end left hand staff
     >>
   } % end relative
