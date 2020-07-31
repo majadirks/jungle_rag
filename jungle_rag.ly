@@ -193,7 +193,7 @@
 	<ees, ees'>16 r8. r4 |
 	r8 <bes' des f> <bes, bes'> r8 | % double bar supplied by RH staff above
 
-	% Strain 1, fist time
+	% Strain 1, fist time, LH
 	<bes bes'> <bes' des f> <bes des f> <bes, bes'>\marcato |
 	<aes aes'> <bes' des f> <bes des f> <aes, aes'>\marcato |
 	<ges ges'> <bes' des f> <bes des f> <ges, ges'>\marcato |
@@ -228,6 +228,13 @@
 	r16 <ees ees'> <bes bes'> r16 r16 <bes bes'> <bes bes'>8 |
 	<bes bes'>4 <bes' des f bes> |
 	<f f'>4 <bes, bes'> |
+
+				% Strain 1, second time, LH
+	<bes bes'>8 <bes' des f> <bes des f> <bes, bes'>\marcato |
+	<aes aes'> <bes' des f> <bes des f> <aes, aes'>\marcato |
+	<ges ges'> <bes' des f> <bes des f> <ges, ges'>\marcato |
+	<f f'>\marcato r8 <f f'>4\tenuto |
+	<aes aes'>8 <ees'' aes c> <aes,, aes'> <ees'' aes c> |
 	
 	} % end left hand staff
     >>
