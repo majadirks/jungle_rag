@@ -64,7 +64,7 @@
 	r4 r16 <bes' bes'>16 <bes bes'>8 |
 	<bes bes'> <bes bes'> <bes bes'> <bes bes'>16 <bes bes'> |
 	r2
-				% Strain 2
+				% Strain 2, RH
 	\repeat volta 2 {
 	  des,8\staccato\mp bes16( a bes8)\staccato r8 |
 	  ees\staccato bes16( a bes8)\staccato r8 |
@@ -73,15 +73,15 @@
 	  ees'8\marcato) r16 c16 des c des8 |
 	  ees8\marcato r16 c16 des c des8 |
 	  f8 r16 f16 ees8 a, |
-	  bes4 r4\< |
-	  r8\mf <ees ges bes>\< r8 <ees ges bes> |
-	  r8 <des f bes>16 <des f bes> <des f bes>8 r8\f |
-	  r2\> |
-	  r8\mf <ees ges bes>16 <ees ges bes> <ees ges bes>8 r8 |
-	  r8\mp <des f aes>\cresc r8 <des f aes> |
+	  bes4 r4 |
+	  r8 <ees ges bes> r8 <ees ges bes> |
+	  r8 <des f bes>16 <des f bes> <des f bes>8 r8 |
+	  r2 |
+	  r8 <ees ges bes>16 <ees ges bes> <ees ges bes>8 r8 |
+	  r8 <des f aes> r8 <des f aes> |
 	  r8 <aes' des f>16 <aes des f> <aes des f>8 r8|
 	  bes,16 c des ees f8 a |
-	  bes\f r8 <bes des f bes> r8^"D.S. al Coda" | % End cresc.
+	  bes r8 <bes des f bes> r8^"D.S. al Coda" |
 	} % end repeat / end Strain 2
 	
 	% Coda / transition to trio
@@ -268,6 +268,29 @@
 	<bes bes'>4 <f' f'>8 <aes aes'>16 <bes bes'> |
 	\ottava #0
 	r2 |
+
+				% Strain 2, LH
+	<bes bes'>8 <bes' des f> r8 <bes des f> |
+	<aes, aes'>8 <bes' des f> r8 <bes des f> |
+	<bes, bes'>8 <aes' aes'>( <ges ges'>\staccato) <ees ees'>( |
+	<d d'> <ees ees'> <d d'> <des des'> |
+	<c c'> <ees ees'>\marcato) r4 |
+	<ces ces'>8 <ees ees'>\marcato r4 |
+	<bes bes'>8 <bes' des f> <aes aes'> <d, d'> |
+	<bes bes'>8 <bes' des f>
+	\dynamicUp
+	<bes, bes'>16\< <aes aes'> <ges ges'> <f f'> |
+	\ottava #-1
+	<ees ees'>4\mf\< <ges ges'> |
+	<bes bes'>4. <b b'>8\f |
+	<bes bes'>8.\> <aes aes'>16 <ges ges'>8 <f f'> |
+	<ees ees'>2\mf
+	<des des'>4\mp <f f'>\cresc |
+	<aes aes'>4. <a a'>8 
+	<aes aes'>8 <ges ges'> <f f'> <a a'> |
+	<bes bes'>\f <f f'> <bes bes'> r8
+	\ottava #0
+	\dynamicNeutral
 	
 	} % end left hand staff
     >>
