@@ -21,9 +21,9 @@
 	ees16 es8 ees16 des8 ces |
 	bes4 r4 \bar "||"
 	% Strain 1, first time
-	bes16\p des\< ees\> des\! r4 |
+	bes16\p\segno des\< ees\> des\! r4 |
 	\repeat unfold 2 {bes16 des\< ees\> des\! r4} |
-	r4 <f\tenuto\ff aes des f> |
+	r4 <f\tenuto aes des f>\ff |
 	<c' ees>8 aes16 <c ees>~ <c ees> aes <c ees>8 |
 	<f, bes des f>2 |
 	<ges bes des>8 <ges bes des>16 <ges bes des>~
@@ -35,11 +35,11 @@
 	% slightly from the 2008 version:
 	% changed bottom note from aes to f,
 	% kept this bar in bass clef instead of treble
-	<f des'>8\cresc <f des'>16 <f des'> r4 \clef treble |
+	<f des'>8\cresc <f des'>16 <f des'> r4 |
 	<ges ees'>8 <ges ees'>16 <ges ees'> r4 |
 	% Change from 2008 version: move f mark earlier
 	<f aes c f>2\f | % end cresc. from three bars ago
-	r2 |
+	r2 \clef treble |
 	\textLengthOn
 	r4 r16 <bes' bes'>16 <bes bes'>8^"To Coda"
 	<bes bes'> <bes bes'> <bes bes'>
@@ -57,10 +57,10 @@
 	<f aes c>4\> r4\! |
 	\clef bass
 	<f, bes>8\mp <f bes>16 <f bes> r4 |
-	<f des'>8\cresc <f des'>16 <f des'> r4 \clef treble |
+	<f des'>8\cresc <f des'>16 <f des'> r4 |
 	<ges ees'>8 <ges ees'>16 <ges ees'> r4 |
 	<f aes c f>2\f | % end cresc. from three bars ago
-	r2 |
+	r2 \clef treble |
 	r4 r16 <bes' bes'>16 <bes bes'>8 |
 	<bes bes'> <bes bes'> <bes bes'> <bes bes'>16 <bes bes'> |
 	r2
@@ -90,7 +90,7 @@
 	<bes bes'>4\staccato  <aes aes'>\staccato |
 	<ges ges'>\staccato <f f'>\staccato \bar "||"
 
-	% Trio
+	% Trio, first time
 	\key ees \minor
 	ees8\mf ges16 f~ f ees f8 |
 	bes8 ges16 f~ f4
@@ -138,7 +138,48 @@
 	<ees aes des>8\staccato r16 <ees aes des>\staccato r4
 	<d ges d'>8\ff <d ges d'> <d ges d'>16 <d ges d'>8. |
 	<ees ges ees'>8 r8 bes''\mf bes
-	
+	% Fourth strain, second time
+	\repeat unfold 2 {bes16 a bes f~ f8 aes}
+	\ottava #1
+	bes16 ces8 des16 f8 ees |
+	bes16 ces des f r4 |
+	\ottava #0
+	bes,8 bes16 bes a8 a16 a |
+	ges8 ges16 f~ f4 |
+	ges16( f ees ges f8)\marcato d\marcato |
+	ees8 r8 r4 |
+	<ees, ges>8\p r16 <ees ges>16~ <ees ges> f ees8 |
+	<ees ges>8\staccato\mp <ees ges>8\staccato\pp r4 |
+	<ees ges bes>8\p r16 <ees ges bes>~ <ees ges bes> aes ges8 |
+	<ees ges bes>\staccato\mp <ees ges bes>\staccato\pp r4 |
+	<ees aes des>8\p r16 <ees aes des>~ <ees aes des> bes' aes8 |
+	<ees aes des>\staccato\mp <ees aes des>\staccato\pp r4
+	\ottava #1
+	bes''16\p a bes r16 d8 bes |
+	ees \ottava #0 r8 r8
+
+	% Trio, second time
+	ges,,16 f \bar "||"
+	ees8\mf ges16 f~ f ees f8 |
+	bes8 ges16 f~ f4 |
+	ees8 ges16 f~ f d ees8 |
+	<<{\voiceOne r8 <aes f'>16\f <aes f'> r16 <aes f'> r8}
+	  \new Voice {\voiceTwo f2} >> | 
+	\oneVoice
+	bes8.\mf( aes16 ges8. bes16 |
+	aes8\staccato) ges16 f~ f8 r8 \clef bass |
+	ees,,16\mp ges a\cresc bes r4 \clef treble |
+	ees'16 ges a bes aes ges f bes |
+	aes8\mf ges f\cresc aes |
+	ges8 f16 ges ees8 r8
+	bes' ges f16 ges r8
+	<bes des>2
+	\acciaccatura ces16 ees8\marcato\f aes,16( bes ces8\marcato) g16( aes |
+	bes8\marcato) ees,16( f ges8\tenuto f16 ges |
+	aes ges f aes ges8\marcato) d\marcato
+	<< {\voiceOne r8 <ges ees'> <ges ees'> r8}
+	   \new Voice {\voiceTwo ees2} >>
+	\oneVoice \bar "|."	
       } % end right hand staff
     >>
   } % end relative
