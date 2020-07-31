@@ -228,13 +228,46 @@
 	r16 <ees ees'> <bes bes'> r16 r16 <bes bes'> <bes bes'>8 |
 	<bes bes'>4 <bes' des f bes> |
 	<f f'>4 <bes, bes'> |
+	\ottava #0
 
 				% Strain 1, second time, LH
-	<bes bes'>8 <bes' des f> <bes des f> <bes, bes'>\marcato |
+	<bes' bes'>8 <bes' des f> <bes des f> <bes, bes'>\marcato |
 	<aes aes'> <bes' des f> <bes des f> <aes, aes'>\marcato |
 	<ges ges'> <bes' des f> <bes des f> <ges, ges'>\marcato |
 	<f f'>\marcato r8 <f f'>4\tenuto |
 	<aes aes'>8 <ees'' aes c> <aes,, aes'> <ees'' aes c> |
+	<des, des'>8. <des des'>16 <ees ees'>8 <f f'> |
+	<ges ges'>8 <ges' bes des> <bes,, bes'> <ges'' bes des> |
+
+	<f, f'>8\tenuto\>( <ees ees'>) <des des'>\tenuto( <c c'>\!) |
+	<bes bes'>8\marcato r8 r8 <bes bes'>\marcato |
+	<aes aes'>8\marcato r8 r8 <aes aes'>\marcato |
+	<ges ges'>8\marcato r8 r8 <ges ges'>\marcato|
+	%Fun cross-hands bit (repeated from above)
+	<<{\voiceOne % voiceOne = spacer rests
+	   % Using spacer rests allows me to position
+	   % the 8va a bit earlier than otherwise
+	   % so it's clear that both of the treble Fs
+	   % are 8va'd
+	   s16 \ottava #1 s16 s8 s4 \ottava #0 } % end spacers
+	  \new Voice {\voiceTwo % voiceTwo = treble notes, stems down
+		      s8 %<f f'>8
+		      \clef treble
+		      f''''' f'4
+		      \clef bass} % end voiceTwo
+	  \new Voice {\voiceThree % voiceThree = bass Fs, stems up
+		      <f,,,,,, f'>8 s8 s4} % end voiceThree
+		    >> % end voiceTwo
+	  \oneVoice
+	| % bar check ends cross-hands bit
+
+	\ottava #-1
+	<bes bes'>8 <f f'> <ees ees'> <f f'>16 <des des'>~ |
+	<des des'>  <c c'>8 <bes bes'>16~ <bes bes'>
+	<bes bes'> <bes bes'>8 |
+	<bes bes'>4 <f' f'>8 <aes aes'>16 <bes bes'> |
+	\ottava #0
+	r2 |
 	
 	} % end left hand staff
     >>
