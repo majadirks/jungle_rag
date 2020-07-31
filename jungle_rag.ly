@@ -205,38 +205,23 @@
 	<bes bes'>8\marcato r8 r8 <bes bes'>\marcato |
 	<aes aes'>8\marcato r8 r8 <aes aes'>\marcato |
 	<ges ges'>8\marcato r8 r8 <ges ges'>\marcato|
-				%Fun cross-hands bit
-				%TODO: two voices, one with spacer rests,
-				% so I can move the 8va slightly earlier
-	%<<{\voiceOne %the actual notes
-	%\autoBeamOff
-	%<f f'>
-	   %\ottava #1
-	%   \clef treble
-	%f'''''-"(Both treble clef notes 8va)" f'4 %\ottava #0
-	%\clef bass
-	%   \autoBeamOn } % end voiceOne
-	%  \new Voice {\voiceTwo % hidden notes
-	% s16 \ottava #1 s16 s8 s4 \ottava #0 } >> % end voiceTwo
-	%\oneVoice	   
-	%|  % end cross-hands bit
-
-	<<{\voiceOne % spacer rests
+	%Fun cross-hands bit
+	<<{\voiceOne % voiceOne = spacer rests
 	   % Using spacer rests allows me to position
 	   % the 8va a bit earlier than otherwise
 	   % so it's clear that both of the treble Fs
 	   % are 8va'd
 	   s16 \ottava #1 s16 s8 s4 \ottava #0 } % end spacers
-	  \new Voice {\voiceTwo % actual notes, stems down
+	  \new Voice {\voiceTwo % voiceTwo = treble notes, stems down
 		      s8 %<f f'>8
 		      \clef treble
 		      f''''' f'4
 		      \clef bass} % end voiceTwo
-	  \new Voice {\voiceThree % lowest Fs, stems up
+	  \new Voice {\voiceThree % voiceThree = bass Fs, stems up
 		      <f,,,,,, f'>8 s8 s4} % end voiceThree
 		    >> % end voiceTwo
 	  \oneVoice
-	  | % end cross-hands bit
+	  | % bar check ends cross-hands bit
 		      
 	
 	} % end left hand staff
