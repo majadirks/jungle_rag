@@ -190,10 +190,11 @@
 	\acciaccatura ces16 ees8\marcato\f aes,16( bes ces8\marcato) g16( aes |
 	bes8\marcato) ees,16( f ges8\tenuto f16 ges |
 	aes ges f aes ges8\marcato) d\marcato
-	<< {\voiceOne r8 <ges ees'> <ges ees'> r8}
-	   \new Voice {\voiceTwo ees2} >>
+	<< {\voiceOne r8 <ges ees'> <ges ees'>}
+	   \new Voice {\voiceTwo ees4.} >>
 	\oneVoice \bar "|."	
       } % end right hand staff
+      s8 % Compensate for pickup measure at beginning of piece
 
       % LEFT HAND
       \new Staff = "down" { % left hand staff
@@ -387,8 +388,12 @@
 	<des des'>8 <bes bes'>16 <aes aes'>~ <aes aes'>4 |
 	<ees ees'>8\marcato r8 <fes fes'>\marcato r8 |
 	<f f'>\marcato <bes bes'>( <ces ces'\tenuto> <bes bes'> |
-	<aes aes'>16) r8. r8 <bes, bes'>\marcato
-	<ees, ees'>2
+	<aes aes'>16) r8. r8 <bes, bes'>\marcato |
+	<ees, ees'>4.
+	%There should be a spacer rest here,
+	% but putting it in creates an extra (empty) measure
+	% so comment it out:
+	%s8  % Compensate for pickup measure at beginning of piece
 	
 	} % end left hand staff
     >>
