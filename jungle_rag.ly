@@ -120,7 +120,7 @@
 	\bar "||"
 	R2\f R2 R2 R2 % center rests in measure
 
-	% Fourth Strain
+	% Fourth Strain, first time, RH
 	\repeat unfold 2 {
 	  <bes' bes'>8 r16 <bes bes'>16~ <bes bes'> f' des8
 	} % end repeat
@@ -143,6 +143,7 @@
 	% Fourth strain, second time
 	% Change from 2008: added grace notes
 	\acciaccatura a'16 bes8\mf \acciaccatura a!16 bes8 | % pickups
+	\bar "||"
 	\repeat unfold 2 {bes16 a bes f~ f8 aes}
 	\ottava #1
 	bes16 ces8 des16 f8 ees |
@@ -329,7 +330,7 @@
 	<aes aes'>16) r8. r8 <bes, bes'>8 |
 	<ees ees'>4. <des des'>8 |
 
-	% Four-bar vamp, LH
+	% LH: Four-bar vamp and fourth strain first time
 	\repeat unfold 3 {
 	<bes bes'>8 <bes'' des  f> <des,, des'> <bes'' des f> |
 	<ees,, ees'> <bes'' des f> <f, f'> <bes' des f> | }
@@ -344,7 +345,22 @@
 	<ees, ees'>8\staccato r16 <ees, ees'>16 r4 | }
 	< g' g'>8 <ges ges'> <f f'> <fes fes'> |
 	r8 <ees, ees'> r4 |
-	
+	% Fourth strain, second time, LH
+	<bes' bes'>8 <bes'' des  f> <des,, des'> <bes'' des f> |
+	<ees,, ees'> <bes'' des f> <f, f'> <bes' des f> |
+	<bes, bes'> <des des'> <aes' des f> <ees ees'> |
+	<des des'> <ces ces'> <bes bes'> <ees, ees'> |
+	<bes bes'>8 <bes'' des  f> <des,, des'> <bes'' des f> |
+	<ges, ges'>8-"Careful! Different this time." <bes' des f> <f, f'> <bes' des f> |
+	<ees,, ees'>8 r8 r4 |
+	r8 <bes bes'> <ees, ees'> r8
+	\repeat unfold 3 {
+	<ees' ees'> <ees' ges bes> <bes, bes'> <ees' ges bes> |
+	<ees, ees'>8\staccato <ees, ees'>\staccato r4 | }
+	<d' d'>16 r16 r8 r4 |
+	\ottava #-1
+	r8 <bes, bes'> <ees ees'> r8
+	\ottava #0
 	} % end left hand staff
     >>
   } % end relative
