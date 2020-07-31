@@ -63,7 +63,7 @@
 	r2 \clef treble |
 	r4 r16 <bes' bes'>16 <bes bes'>8 |
 	<bes bes'> <bes bes'> <bes bes'> <bes bes'>16 <bes bes'> |
-	r2
+	R2 % center rest
 				% Strain 2, RH
 	\repeat volta 2 {
 	  des,8\staccato\mp bes16( a bes8)\staccato r8 |
@@ -76,7 +76,7 @@
 	  bes4 r4 |
 	  r8 <ees ges bes> r8 <ees ges bes> |
 	  r8 <des f bes>16 <des f bes> <des f bes>8 r8 |
-	  r2 |
+	  R2 | % center rest in measure
 	  r8 <ees ges bes>16 <ees ges bes> <ees ges bes>8 r8 |
 	  r8 <des f aes> r8 <des f aes> |
 	  r8 <aes' des f>16 <aes des f> <aes des f>8 r8|
@@ -116,9 +116,9 @@
 	   \new Voice {\voiceTwo ees2} >> |
 	\oneVoice
 
-	% Four-bar vamp
+	% Four-bar vamp, RH (rests)
 	\bar "||"
-	r2\f r2 r2 r2
+	R2\f R2 R2 R2 % center rests in measure
 
 	% Fourth Strain
 	\repeat unfold 2 {
@@ -267,7 +267,7 @@
 	<bes bes'> <bes bes'>8 |
 	<bes bes'>4 <f' f'>8 <aes aes'>16 <bes bes'> |
 	\ottava #0
-	r2 |
+	R2 | % center rest
 
 				% Strain 2, LH
 	<bes bes'>8 <bes' des f> r8 <bes des f> |
@@ -324,6 +324,11 @@
 	<ees ees'>8 <bes' bes'>( <ces ces'> <bes bes'> |
 	<aes aes'>16) r8. r8 <bes, bes'>8 |
 	<ees ees'>4. <des des'>8 |
+
+	% Four-bar vamp, LH
+	\repeat unfold 2 {
+	<bes bes'>8 <bes'' des  f> <des,, des'> <bes'' des f> |
+	<ees,, ees'> <bes'' des f> <f, f'> <bes' des f> | }
 	
 	} % end left hand staff
     >>
