@@ -181,6 +181,17 @@
 	   \new Voice {\voiceTwo ees2} >>
 	\oneVoice \bar "|."	
       } % end right hand staff
+
+      % LEFT HAND
+      \new Staff = "down" { % left hand staff
+	\clef bass
+	\key bes \minor
+	\partial 8 r8
+	<ees,, ees'>\marcato <ees' ges bes> <ees ges bes> <des, des'>( |
+	<ees ees'>\marcato) <bes bes'> <bes' des f> <bes des f> |
+	<ees, ees'>16 r8. r4 |
+	r8 <bes' des f> <bes, bes'> r8 | % double bar supplied by RH staff above
+	} % end left hand staff
     >>
   } % end relative
 } % end score
