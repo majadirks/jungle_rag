@@ -361,6 +361,27 @@
 	\ottava #-1
 	r8 <bes, bes'> <ees ees'> r8
 	\ottava #0
+
+				% Trio, second time, LH
+	<ees' ees'>8\marcato <ees' ges bes> <ees ges bes> <des, des'>( |
+	<ees ees'>\marcato) <bes bes'> <bes' des f> <bes des f> |
+	% Change from 2008: the <ees, ees'> octave
+	% probably shouldn't be marcato
+	<ees, ees'>8 <ees' ges bes> <ees ges bes> <ees, ees'> |
+	<d d'> <aes' aes'>\marcato <f f'>\marcato <ees ees'>\marcato |
+	<aes aes'> <aes' ces ees> <bes, bes'> <ees, ees'> |
+	<fes fes'>\staccato <aes aes'>\marcato <a a'>\marcato <bes bes'>\marcato |
+	r4 ees16 ges a bes |
+	R2 |
+	<aes, aes'>8 <aes' ces ees> <ees, ees'> <aes' ces ees> |
+	<des, des'> <c c'> <ces ces'> <bes, bes'> |
+	<ees ees'> <ges ges'> <bes bes'> <ces ces'> |
+	<des des'>8 <bes bes'>16 <aes aes'>~ <aes aes'>4 |
+	<ees ees'>8\marcato r8 <fes fes'>\marcato r8 |
+	<f f'>\marcato <bes bes'>( <ces ces'\tenuto> <bes bes'> |
+	<aes aes'>16) r8. r8 <bes, bes'>\marcato
+	<ees, ees'>2
+	
 	} % end left hand staff
     >>
   } % end relative
