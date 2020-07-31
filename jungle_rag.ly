@@ -128,8 +128,16 @@
 	bes16 ces des f r4 |
 	<bes, bes'>8\f r16 <bes bes'>16~ <bes bes'> f' des8 |
 	<bes bes'> r16 <bes bes'>16~ <bes bes'>4 |
-	bes16 bes' aes ges f8 d |
+	bes16\mp bes' aes ges f8 d |
 	ees8 r8 r4 |
+	<ees, ges>8\p r16 <ees ges>16~ <ees ges> f ees8 |
+	<ees ges>8\staccato r16 <ees ges>16\staccato r4 |
+	<ees ges bes>8\p r16 <ees ges bes>16~ <ees ges bes> aes ges8 |
+	<ees ges bes>8\staccato r16 <ees ges bes>\staccato r4 |
+	<ees aes des>8\p r16 <ees aes des>16~ <ees aes des> bes' aes8|
+	<ees aes des>8\staccato r16 <ees aes des>\staccato r4
+	<d ges d'>8\ff <d ges d'> <d ges d'>16 <d ges d'>8. |
+	<ees ges ees'>8 r8 bes''\mf bes
 	
       } % end right hand staff
     >>
