@@ -49,7 +49,7 @@
 	\bar "||"
 	bes,16\p des\< ees\> des\! r4 |
 	\repeat unfold 2 {bes16 des\< ees\> des\! r4} |
-	r4 <f\tenuto\ff aes des f> |
+	r4 <f\tenuto aes des f>\ff |
 	<c' ees>8 aes16 <c ees>~ <c ees> aes <c ees>8 |
 	<f, bes des f>2 |
 	<ges bes des>8 <ges bes des>16 <ges bes des>~
