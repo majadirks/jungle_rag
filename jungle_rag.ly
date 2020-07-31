@@ -129,7 +129,7 @@
 	<bes, bes'>8\f r16 <bes bes'>16~ <bes bes'> f' des8 |
 	<bes bes'> r16 <bes bes'>16~ <bes bes'>4 |
 	bes16\mp bes' aes ges f8 d |
-	ees8 r8 r4 |
+	ees4 r4 |
 	<ees, ges>8\p r16 <ees ges>16~ <ees ges> f ees8 |
 	<ees ges>8\staccato r16 <ees ges>16\staccato r4 |
 	<ees ges bes>8\p r16 <ees ges bes>16~ <ees ges bes> aes ges8 |
@@ -137,8 +137,12 @@
 	<ees aes des>8\p r16 <ees aes des>16~ <ees aes des> bes' aes8|
 	<ees aes des>8\staccato r16 <ees aes des>\staccato r4
 	<d ges d'>8\ff <d ges d'> <d ges d'>16 <d ges d'>8. |
-	<ees ges ees'>8 r8 bes''\mf bes
+	<ees ges ees'>8 r8
+	
+	
 	% Fourth strain, second time
+	% Change from 2008: added grace notes
+	\acciaccatura a'16 bes8\mf \acciaccatura a!16 bes8 | % pickups
 	\repeat unfold 2 {bes16 a bes f~ f8 aes}
 	\ottava #1
 	bes16 ces8 des16 f8 ees |
@@ -326,9 +330,20 @@
 	<ees ees'>4. <des des'>8 |
 
 	% Four-bar vamp, LH
-	\repeat unfold 2 {
+	\repeat unfold 3 {
 	<bes bes'>8 <bes'' des  f> <des,, des'> <bes'' des f> |
 	<ees,, ees'> <bes'' des f> <f, f'> <bes' des f> | }
+	<bes, bes'> <des des'> <aes' des f> <ees ees'> |
+	<des des'> <ces ces'> <bes bes'> <ees, ees'> |
+	<bes bes'>8 <bes'' des  f> <des,, des'> <bes'' des f> |
+	<ees,, ees'> <bes'' des f> <f, f'> <bes' des f> |
+	<ees,, ees'> <aes aes'> <ges ges'> <f f'> |
+	<ees ees'> <ees' ges bes> <ees,, ees'> r8 |
+	\repeat unfold 3 {
+	<ees' ees'> <ees' ges bes> <bes, bes'> <ees' ges bes> |
+	<ees, ees'>8\staccato r16 <ees, ees'>16 r4 | }
+	< g' g'>8 <ges ges'> <f f'> <fes fes'> |
+	r8 <ees, ees'> r4 |
 	
 	} % end left hand staff
     >>
