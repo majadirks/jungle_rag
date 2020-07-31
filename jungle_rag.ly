@@ -1,5 +1,11 @@
 \version "2.18.2"
 
+% Using A4 instead of letter allows this to fit on
+% four pages instead of five.
+% But if you want to change the size to letter,
+%uncomment the following line:
+%#(set-default-paper-size "letter") 
+
 \header {
   title = "Jungle Rag"
   composer = "Matthew Dirks"
