@@ -3,7 +3,7 @@
 % Using A4 instead of letter allows this to fit on
 % four pages instead of five.
 % But if you want to change the size to letter,
-%uncomment the following line:
+% uncomment the following line:
 %#(set-default-paper-size "letter") 
 
 \header {
