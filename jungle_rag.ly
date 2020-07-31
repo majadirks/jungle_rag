@@ -3,7 +3,7 @@
 \header {
   title = "Jungle Rag"
   composer = "Matthew Dirks"
-  copyright = "2008"
+  copyright = "composed 2008, edited 2020"
 }
 
 \score {
@@ -221,8 +221,13 @@
 		      <f,,,,,, f'>8 s8 s4} % end voiceThree
 		    >> % end voiceTwo
 	  \oneVoice
-	  | % bar check ends cross-hands bit
-		      
+	| % bar check ends cross-hands bit
+
+	\ottava #-1
+	<bes bes'>8 <bes bes'> <aes aes'> <ges ges'>16 <f f'> |
+	r16 <ees ees'> <bes bes'> r16 r16 <bes bes'> <bes bes'>8 |
+	<bes bes'>4 <bes' des f bes> |
+	<f f'>4 <bes, bes'> |
 	
 	} % end left hand staff
     >>
