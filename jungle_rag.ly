@@ -327,7 +327,7 @@
 	<des des'> <bes bes'>16 <aes aes'>~ <aes aes'>4 |
 	<aes aes'>8 <ges ges'> <fes fes'>\marcato r8 |
 	<ees ees'>8 <bes' bes'>( <ces ces'> <bes bes'> |
-	<aes aes'>16) r8. r8 <bes, bes'>8 |
+	<aes aes'>16) r8. r8 <bes, bes'>8\marcato |
 	<ees ees'>4. <des des'>8 |
 
 	% LH: Four-bar vamp and fourth strain first time
