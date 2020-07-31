@@ -301,6 +301,29 @@
 	\ottava #-1
 	<bes bes'>4\staccato <bes' bes'>\staccato |
 	<ces ces'>\staccato <des des'>\tenuto |
+	\ottava #0
+	% Trio LH, first time
+	\key ees \minor
+	<ees ees'>8\marcato <ees' ges bes>
+	<ees ges bes> <des, des'>( |
+	<ees ees'>\marcato) <bes bes'>
+	<bes' des f> <bes des f> |
+	<ees, ees'>\marcato <ees' ges bes>
+	<ees ges bes> <ees, ees'> |
+	<d d'> <aes' aes'>\marcato
+	<f f'>\marcato <ees ees'>\marcato |
+	<aes aes'>8 <aes' ces ees> <bes, bes'> <ees, ees'> |
+	<fes fes'>8 <aes aes'> <a a'> <bes bes'> |
+	r4 ees16 ges a bes |
+	r2 |
+	<aes, aes'>8 <aes' ces ees> <ees, ees'> <aes' ces ees> |
+	<des, des'> <ces ces'> <bes bes'> <bes, bes'> |
+	<ees ees'> <ges ges'> <bes bes'> <ces ces'> |
+	<des des'> <bes bes'>16 <aes aes'>~ <aes aes'>4 |
+	<aes aes'>8 <ges ges'> <fes fes'>\marcato r8 |
+	<ees ees'>8 <bes' bes'>( <ces ces'> <bes bes'> |
+	<aes aes'>16) r8. r8 <bes, bes'>8 |
+	<ees ees'>4. <des des'>8 |
 	
 	} % end left hand staff
     >>
