@@ -97,7 +97,8 @@
 	ees8 ges16 f~ f d ees8 |
 	% voiceOne gets upstems, voiceTwo gets downstems
 	<<{\voiceOne r8 <aes f'>16\f <aes f'> r16 <aes f'> r8}
-	  \new Voice {\voiceTwo f2} >> | %TODO: rests are placed too high after this!
+	  \new Voice {\voiceTwo f2} >> | 
+	\oneVoice % Need this, else voiceOne behavior remains (and looks ugly)
 	bes8\mf aes16 ges~ ges8 bes |
 	aes ges16 f~ f8 r8 |
 	\clef bass
@@ -106,8 +107,29 @@
 	aes8\mf ges f\cresc aes |
 	ges f16 ges ees8 r8 |
 	aes ges f16 ges r8 |
-	bes2
-	ces16\f bes aes ces
+	bes2 |
+	ces16(\f bes aes ces bes8)\marcato g16 aes |
+	bes8\marcato ges16 f~ f4 |
+	aes16( ges f aes ges8)\marcato d\marcato |
+
+	<< {\voiceOne r8 <ges ees'> <ges ees'> r8}
+	   \new Voice {\voiceTwo ees2} >> |
+	\oneVoice
+
+	% Four-bar vamp
+	\bar "||"
+	r2\f r2 r2 r2
+
+	% Fourth Strain
+	\repeat unfold 2 {
+	  <bes' bes'>8 r16 <bes bes'>16~ <bes bes'> f' des8
+	} % end repeat
+	bes16\mp ces des f r ees r8 |
+	bes16 ces des f r4 |
+	<bes, bes'>8\f r16 <bes bes'>16~ <bes bes'> f' des8 |
+	<bes bes'> r16 <bes bes'>16~ <bes bes'>4 |
+	bes16 bes' aes ges f8 d |
+	ees8 r8 r4 |
 	
       } % end right hand staff
     >>
