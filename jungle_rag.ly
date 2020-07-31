@@ -88,7 +88,7 @@
 	\break
 	s4 s8^"Coda" s8\coda | % Extra measure for spacing before coda
 	<bes bes'>4\staccato  <aes aes'>\staccato |
-	<ges ges'>\staccato <f f'>\staccato \bar "||"
+	<ges ges'>\staccato <f f'>\tenuto \bar "||"
 
 	% Trio, first time
 	\key ees \minor
@@ -288,9 +288,19 @@
 	<des des'>4\mp <f f'>\cresc |
 	<aes aes'>4. <a a'>8 
 	<aes aes'>8 <ges ges'> <f f'> <a a'> |
-	<bes bes'>\f <f f'> <bes bes'> r8
+	% The following measure corrects a typo from 2008:
+	% final note should be octaved bes's, but 2008 has an aes
+	% as the low note
+	<bes bes'>\f <f f'> <bes, bes'> r8
 	\ottava #0
 	\dynamicNeutral
+
+	
+	% Coda / transition to trio, LH
+	s2 %spacer measure
+	\ottava #-1
+	<bes bes'>4\staccato <bes' bes'>\staccato |
+	<ces ces'>\staccato <des des'>\tenuto |
 	
 	} % end left hand staff
     >>
