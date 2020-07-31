@@ -58,8 +58,10 @@
 	r4 <f\tenuto aes des f>\ff |
 	<c' ees>8 aes16 <c ees>~ <c ees> aes <c ees>8 |
 	<f, bes des f>2 |
-	<ges bes des>8 <ges bes des>16 <ges bes des>~
-	<ges bes des> <ges bes des> <ges bes des>8 |
+	%<ges bes des>8 <ges bes des>16 <ges bes des>~
+	%<ges bes des> <ges bes des> <ges bes des>8 |
+	<ges bes des>16 <ges bes des>8 <ges bes des>16
+	<ges bes des>8 <ges bes des>
 	<f aes c>4 r4 |
 	\clef bass
 	<f, bes>8\mp <f bes>16 <f bes> r4 |
