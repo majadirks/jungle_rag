@@ -192,9 +192,11 @@
 	aes ges f aes ges8\marcato) d\marcato
 	<< {\voiceOne r8 <ges ees'> <ges ees'>}
 	   \new Voice {\voiceTwo ees4.} >>
-	\oneVoice \bar "|."	
+	\oneVoice
+	s8 % compensate for pickup measure at beginning
+	\bar "|."	
       } % end right hand staff
-      s8 % Compensate for pickup measure at beginning of piece
+      
 
       % LEFT HAND
       \new Staff = "down" { % left hand staff
@@ -393,7 +395,7 @@
 	%There should be a spacer rest here,
 	% but putting it in creates an extra (empty) measure
 	% so comment it out:
-	%s8  % Compensate for pickup measure at beginning of piece
+	s8  % Compensate for pickup measure at beginning of piece
 	
 	} % end left hand staff
     >>
